@@ -3,6 +3,10 @@ from sklearn.metrics import roc_auc_score
 
 TARGETS = ['toxic', 'severe_toxic', 'obscene', 'threat', 'insult', 'identity_hate']
 
+def transform_preds_to_df(preds):
+    target_probs = pd.DataFrame([[c[1] for c in preds[row]] for row in range(len(preds))]).T
+    target_probs.columns = TARGETS
+    return target_probs
 
 def multi_roc_auc(y_true, y_score, verbose=False):
     ''' Compute roc auc for each target and then average them
