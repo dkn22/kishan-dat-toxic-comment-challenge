@@ -1,7 +1,7 @@
 Toxic Comments Classification Challenge
 =======================================
 
-This repository documents Kishan Manani and Dat Nguyen's submission to
+This repository documents Kishan Manani and [Dat Nguyen](http://dkn22.github.io)'s submission to
 the Toxic Comments Classification Challenge hosted on Kaggle. A variety
 of methods and tools were explored, these included: Bi-directional LSTMs
 with word embeddings using Keras, gradient boosted trees using LigthGBM
