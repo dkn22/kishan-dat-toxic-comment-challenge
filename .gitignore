@@ -1,4 +1,5 @@
 .zip
 .pyc
+.glove.6B
 .ipynb_checkpoint*
 *.DS_Store
