@@ -9,7 +9,10 @@ and XGBoost, Logistic Regression, and LASSO along with standard text
 processing methods such as TF-IDF. We also used model stacking, also
 known as blending or ensembling.
 
-# Notebooks
+# Notebook kernels
+
+Here are some of the modelling ideas we explored during the competition.
+
 1. [Exploratory data analysis](https://github.com/dkn22/kishan-dat-toxic-comment-challenge/blob/master/notebooks/1.1-eda.ipynb)
 2. [Baseline model](https://github.com/dkn22/kishan-dat-toxic-comment-challenge/blob/master/notebooks/2.1-baseline-model.ipynb) using logistic regression with TF-IDF features
     - [Multi-label feature selection using LASSO](https://github.com/dkn22/kishan-dat-toxic-comment-challenge/blob/master/notebooks/2.1.2-multilabel-feature-selection.ipynb)
