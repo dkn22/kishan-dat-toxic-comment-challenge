@@ -12,7 +12,7 @@ known as blending or ensembling.
 # Notebooks
 1. [Exploratory data analysis](https://github.com/dkn22/kishan-dat-toxic-comment-challenge/blob/master/notebooks/1.1-eda.ipynb)
 2. [Baseline model](https://github.com/dkn22/kishan-dat-toxic-comment-challenge/blob/master/notebooks/2.1-baseline-model.ipynb) using logistic regression with TF-IDF features
-    2.1 [Multi-label feature selection using LASSO](
+    - [Multi-label feature selection using LASSO](https://github.com/dkn22/kishan-dat-toxic-comment-challenge/blob/master/notebooks/2.1.2-multilabel-feature-selection.ipynb)
 3. Gradient boosting
     - [XGBoost on features selected from LASSO](https://github.com/dkn22/kishan-dat-toxic-comment-challenge/blob/master/notebooks/2.3.1-pipeline-xgb.ipynb)
     - The multi-label nature of the target is handled through classifier chaining (which allows the model to learn correlations between labels)
