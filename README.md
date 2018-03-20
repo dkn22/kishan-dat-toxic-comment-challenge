@@ -10,50 +10,15 @@ processing methods such as TF-IDF. We also used model stacking, also
 known as blending or ensembling.
 
 # Notebooks
-1. Exploratory data analysis
-2. Baseline model using logistic regression
+1. [Exploratory data analysis](https://github.com/dkn22/kishan-dat-toxic-comment-challenge/blob/master/notebooks/1.1-eda.ipynb)
+2. [Baseline model](https://github.com/dkn22/kishan-dat-toxic-comment-challenge/blob/master/notebooks/2.1-baseline-model.ipynb) using logistic regression with TF-IDF features
+    2.1 [Multi-label feature selection using LASSO](
 3. Gradient boosting
+    - [XGBoost on features selected from LASSO](https://github.com/dkn22/kishan-dat-toxic-comment-challenge/blob/master/notebooks/2.3.1-pipeline-xgb.ipynb)
+    - The multi-label nature of the target is handled through classifier chaining (which allows the model to learn correlations between labels)
 4. Bi-directional LSTMs with word embeddings
+    - [Google News word embeddings](https://github.com/dkn22/kishan-dat-toxic-comment-challenge/blob/master/notebooks/3.1-preprocessing-embeddings.ipynb) (pre-trained word2vec)
+    - GloVe
+    - This was individually the best model.
 5. Model ensembling
-
-
-
-Project Organization
---------------------
-
-    ├── README.md          <- The top-level README for developers using this project
-    │
-    ├── data               <- The original data dump from Kaggle
-    │
-    ├── embeddings         <- The word embeddings .txt files
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         and a short `-` delimited description, e.g. 1.0-exploratory-data-analysis`.
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.testrun.org
-
-
---------
 
