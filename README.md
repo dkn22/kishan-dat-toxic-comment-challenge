@@ -1,32 +1,36 @@
-kd
-==============================
+Toxic Comments Classification Challenge
+=======================================
 
-kd
+This repository documents Kishan Manani and Dat Nguyen's submission to
+the Toxic Comments Classification Challenge hosted on Kaggle. A variety
+of methods and tools were explored, these included: Bi-directional LSTMs
+with word embeddings using Keras, gradient boosted trees using LigthGBM
+and XGBoost, Logistic Regression, and LASSO along with standard text
+processing methods such as TF-IDF. We also used model stacking, also
+known as blending or ensembling.
+
+# Notebooks
+1. Exploratory data analysis
+2. Baseline model using logistic regression
+3. Gradient boosting
+4. Bi-directional LSTMs with word embeddings
+5. Model ensembling
+
+
 
 Project Organization
-------------
+--------------------
 
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
+    ├── README.md          <- The top-level README for developers using this project
     │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
+    ├── data               <- The original data dump from Kaggle
+    │
+    ├── embeddings         <- The word embeddings .txt files
     │
     ├── models             <- Trained and serialized models, model predictions, or model summaries
     │
     ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
+    │                         and a short `-` delimited description, e.g. 1.0-exploratory-data-analysis`.
     │
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
     │                         generated with `pip freeze > requirements.txt`
@@ -53,4 +57,3 @@ Project Organization
 
 --------
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
